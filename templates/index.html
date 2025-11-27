@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heart of Stars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="cosmic-bg"></div>
+  <canvas id="canvas"></canvas>
+  <div class="message">
+    <div>Phuongg06🥑</div>
+    <div class="subtitle">Anh yêu em...Cho dù ở vũ trụ nào anh vẫn yêu em</div>
+  </div>
+  
+  <audio id="bg-music" loop>
+    <source src="{{ url_for('static', filename='Beneath the Rain.mp3') }}" type="audio/mpeg">
+  </audio>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

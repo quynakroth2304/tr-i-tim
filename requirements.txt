@@ -1,0 +1,7 @@
+flask
+syncedlyrics
+google-generativeai
+gunicorn
+psycopg2-binary
+yt-dlp
+requests
