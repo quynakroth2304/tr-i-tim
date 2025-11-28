@@ -114,8 +114,16 @@ function createMeteor() {
 }
 
 setInterval(() => {
-  if (Math.random() < 0.8) createFallingText();
-}, 2000);
+  // Bỏ dòng if (Math.random...) đi để chữ luôn luôn rơi ra
+  createFallingText(); 
+  
+  // Muốn dày hơn nữa thì copy dòng trên ra thêm 1-2 lần:
+  // createFallingText(); 
+}, 300); 
+// SỐ 300 NÀY LÀ QUAN TRỌNG NHẤT:
+// - Cũ là 2000 (2 giây mới rơi 1 lần -> thưa).
+// - Sửa thành 300 (0.3 giây rơi 1 lần -> dày hơn nhiều).
+// - Thích dày đặc kín màn hình thì sửa xuống 100.
 
 
 function animate() {
